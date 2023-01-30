@@ -5,4 +5,9 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://ForBo7.github.io',
                 'git_url': 'https://github.com/ForBo7/terminalStopwatch',
                 'lib_path': 'terminalStopwatch'},
-  'syms': {'terminalStopwatch.core': {'terminalStopwatch.core.foo': ('core.html#foo', 'terminalStopwatch/core.py')}}}
+  'syms': { 'terminalStopwatch.stopwatch1': { 'terminalStopwatch.stopwatch1.StopwatchApp': ( 'stopwatch1.html#stopwatchapp',
+                                                                                             'terminalStopwatch/stopwatch1.py'),
+                                              'terminalStopwatch.stopwatch1.StopwatchApp.action_toggle_dark': ( 'stopwatch1.html#stopwatchapp.action_toggle_dark',
+                                                                                                                'terminalStopwatch/stopwatch1.py'),
+                                              'terminalStopwatch.stopwatch1.StopwatchApp.compose': ( 'stopwatch1.html#stopwatchapp.compose',
+                                                                                                     'terminalStopwatch/stopwatch1.py')}}}
