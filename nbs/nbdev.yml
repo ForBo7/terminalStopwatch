@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "terminalStopwatch"
+  site-url: "https://ForBo7.github.io/terminalStopwatch"
+  description: "Using Textual to create a stopwatch app in terminal that has a GUI."
+  repo-branch: main
+  repo-url: "https://github.com/ForBo7/terminalStopwatch"
