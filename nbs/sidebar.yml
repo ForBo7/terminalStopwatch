@@ -3,3 +3,4 @@ website:
     contents:
       - index.ipynb
       - stopwatch1.ipynb
+      - stopwatch2.ipynb
