@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "stopwatch1.html",
+    "href": "stopwatch1.html",
+    "title": "Stopwatch Iteration 1",
+    "section": "",
+    "text": "from textual.app import App, ComposeResult\nfrom textual.widgets import Header, Footer\nApp is a baseclass. Footer shows a bar at the bottom of the screen that contains keyboard shortcuts. Header will show the title at the top of the screen."
+  },
+  {
+    "objectID": "stopwatch1.html#create-the-app-class",
+    "href": "stopwatch1.html#create-the-app-class",
+    "title": "Stopwatch Iteration 1",
+    "section": "Create the App Class",
+    "text": "Create the App Class\n\nsource\n\nStopwatchApp\n\n StopwatchApp (driver_class:Type[Driver]|None=None,\n               css_path:CSSPathType=None, watch_css:bool=False)\n\nA Textual app to manage stopwatches.\nThis class contains a BINDINGS tuple. The first value is the key, the second is the name of the action, and the third is a short description.\n\nsource\n\n\nStopwatchApp.compose\n\n StopwatchApp.compose ()\n\nCreate child widgets for the app.\nThis method creates the user interface with widgets. It’s easier to yield them than to return them.\n\nsource\n\n\nStopwatchApp.action_toggle_dark\n\n StopwatchApp.action_toggle_dark ()\n\nAn action to toggle dark mode.\nThis is an action method. Such methods begin with the action_ prefix. The BINDINGS tuple tells Textual to run this action when D is pressed."
+  },
+  {
+    "objectID": "stopwatch2.html",
+    "href": "stopwatch2.html",
+    "title": "Stopwatch Iteration 2",
+    "section": "",
+    "text": "from textual.app import App, ComposeResult\nfrom textual.containers import Container\nfrom textual.widgets import Button, Header, Footer, Static\nButton creates a clickable button. Static is a base class for simple control. Container is a Widget that contains other widgets."
+  },
+  {
+    "objectID": "stopwatch2.html#create-time-display",
+    "href": "stopwatch2.html#create-time-display",
+    "title": "Stopwatch Iteration 2",
+    "section": "Create Time Display",
+    "text": "Create Time Display\n\nsource\n\nTimeDisplay\n\n TimeDisplay (renderable:RenderableType='', expand:bool=False,\n              shrink:bool=False, markup:bool=True, name:str|None=None,\n              id:str|None=None, classes:str|None=None)\n\nA widget to display elapsed time.\nThis class will be fleshed out later."
+  },
+  {
+    "objectID": "stopwatch2.html#create-stopwatch",
+    "href": "stopwatch2.html#create-stopwatch",
+    "title": "Stopwatch Iteration 2",
+    "section": "Create Stopwatch",
+    "text": "Create Stopwatch\n\nsource\n\nStopwatch\n\n Stopwatch (renderable:RenderableType='', expand:bool=False,\n            shrink:bool=False, markup:bool=True, name:str|None=None,\n            id:str|None=None, classes:str|None=None)\n\nA stopwatch widget.\n\nsource\n\n\nStopwatch.compose\n\n Stopwatch.compose ()\n\nCreate child widgets of a stopwatch."
+  },
+  {
+    "objectID": "stopwatch2.html#create-app",
+    "href": "stopwatch2.html#create-app",
+    "title": "Stopwatch Iteration 2",
+    "section": "Create App",
+    "text": "Create App\n\nsource\n\nStopwatchApp\n\n StopwatchApp (driver_class:Type[Driver]|None=None,\n               css_path:CSSPathType=None, watch_css:bool=False)\n\nA Textual app to manage stopwatches.\n\nsource\n\n\nStopwatchApp.compose\n\n StopwatchApp.compose ()\n\nCreate child widgets for the app.\n\nsource\n\n\nStopwatchApp.action_toggle_dark\n\n StopwatchApp.action_toggle_dark ()\n\nAn action to toggle dark mode."
+  },
+  {
+    "objectID": "stopwatch5.html",
+    "href": "stopwatch5.html",
+    "title": "Stopwatch Iteration 5",
+    "section": "",
+    "text": "source\n\n\n\n TimeDisplay (renderable:RenderableType='', expand:bool=False,\n              shrink:bool=False, markup:bool=True, name:str|None=None,\n              id:str|None=None, classes:str|None=None)\n\nA widget to display elapsed time.\nThe arguments passed to reactive specify the default value or a callable that returns the default\n\nsource\n\n\n\n\n TimeDisplay.on_mount ()\n\nEvent handler called when widget is added to the app.\n\nsource\n\n\n\n\n TimeDisplay.update_time ()\n\nMethod to update the time to the current time.\n\nsource\n\n\n\n\n TimeDisplay.watch_time (time:float)\n\nCalled when the time attribute changes.\nA method prefixed with watch_ and suffixed with the name of a reactive attribute is called every time the reactive attribute is modified."
+  },
+  {
+    "objectID": "stopwatch5.html#create-the-stopwatch",
+    "href": "stopwatch5.html#create-the-stopwatch",
+    "title": "Stopwatch Iteration 5",
+    "section": "Create the Stopwatch",
+    "text": "Create the Stopwatch\n\nsource\n\nStopwatch\n\n Stopwatch (renderable:RenderableType='', expand:bool=False,\n            shrink:bool=False, markup:bool=True, name:str|None=None,\n            id:str|None=None, classes:str|None=None)\n\nA stopwatch widget.\n\nsource\n\n\nStopwatch.on_button_pressed\n\n Stopwatch.on_button_pressed\n                              (event:textual.widgets._button.Button.Presse\n                              d)\n\nEven handler called when a button is pressed.\n\nsource\n\n\nStopwatch.compose\n\n Stopwatch.compose ()\n\nCreate child widgets of a stopwatch."
+  },
+  {
+    "objectID": "stopwatch5.html#create-the-app",
+    "href": "stopwatch5.html#create-the-app",
+    "title": "Stopwatch Iteration 5",
+    "section": "Create the App",
+    "text": "Create the App\n\nsource\n\nStopwatchApp\n\n StopwatchApp (driver_class:Type[Driver]|None=None,\n               css_path:CSSPathType=None, watch_css:bool=False)\n\nA Textual app to manage stopwatches.\n\nsource\n\n\nStopwatchApp.compose\n\n StopwatchApp.compose ()\n\nCreate child widgets for the app.\n\nsource\n\n\nStopwatchApp.action_toggle_dark\n\n StopwatchApp.action_toggle_dark ()\n\nAn action to toggle dark mode."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "terminalStopwatch",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "terminalStopwatch",
+    "section": "Install",
+    "text": "Install\npip install terminalStopwatch"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "terminalStopwatch",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  },
+  {
+    "objectID": "stopwatch4.html#create-the-timedisplay",
+    "href": "stopwatch4.html#create-the-timedisplay",
+    "title": "Stopwatch Iteration 4",
+    "section": "Create the TimeDisplay",
+    "text": "Create the TimeDisplay\n\nsource\n\nTimeDisplay\n\n TimeDisplay (renderable:RenderableType='', expand:bool=False,\n              shrink:bool=False, markup:bool=True, name:str|None=None,\n              id:str|None=None, classes:str|None=None)\n\nA widget to display elapsed time."
+  },
+  {
+    "objectID": "stopwatch4.html#create-the-stopwatch",
+    "href": "stopwatch4.html#create-the-stopwatch",
+    "title": "Stopwatch Iteration 4",
+    "section": "Create the Stopwatch",
+    "text": "Create the Stopwatch\n\nsource\n\nStopwatch\n\n Stopwatch (renderable:RenderableType='', expand:bool=False,\n            shrink:bool=False, markup:bool=True, name:str|None=None,\n            id:str|None=None, classes:str|None=None)\n\nA stopwatch widget.\n\nsource\n\n\nStopwatch.on_button_pressed\n\n Stopwatch.on_button_pressed\n                              (event:textual.widgets._button.Button.Presse\n                              d)\n\nEvent handler called when a button is pressed.\nEvent handlers begin with the on_ prefix.\n\nsource\n\n\nStopwatch.compose\n\n Stopwatch.compose ()\n\nCreate child widgets of a stopwatch."
+  },
+  {
+    "objectID": "stopwatch4.html#create-the-app",
+    "href": "stopwatch4.html#create-the-app",
+    "title": "Stopwatch Iteration 4",
+    "section": "Create the App",
+    "text": "Create the App\n\nsource\n\nStopwatchApp\n\n StopwatchApp (driver_class:Type[Driver]|None=None,\n               css_path:CSSPathType=None, watch_css:bool=False)\n\nA Textual app to manage stopwatches.\n\nsource\n\n\nStopwatchApp.compose\n\n StopwatchApp.compose ()\n\nCreate child widgets for the app.\n\nsource\n\n\nStopwatchApp.action_toggle_dark\n\n StopwatchApp.action_toggle_dark ()\n\nAn action to toggle dark mode."
+  },
+  {
+    "objectID": "stopwatch3.html#create-the-timedisplay",
+    "href": "stopwatch3.html#create-the-timedisplay",
+    "title": "Stopwatch Iteration 3",
+    "section": "Create the TimeDisplay",
+    "text": "Create the TimeDisplay\n\nsource\n\nTimeDisplay\n\n TimeDisplay (renderable:RenderableType='', expand:bool=False,\n              shrink:bool=False, markup:bool=True, name:str|None=None,\n              id:str|None=None, classes:str|None=None)\n\nA widget to display elapsed time."
+  },
+  {
+    "objectID": "stopwatch3.html#create-the-stopwatch",
+    "href": "stopwatch3.html#create-the-stopwatch",
+    "title": "Stopwatch Iteration 3",
+    "section": "Create the Stopwatch",
+    "text": "Create the Stopwatch\n\nsource\n\nStopwatch\n\n Stopwatch (renderable:RenderableType='', expand:bool=False,\n            shrink:bool=False, markup:bool=True, name:str|None=None,\n            id:str|None=None, classes:str|None=None)\n\nA stopwatch widget.\n\nsource\n\n\nStopwatch.compose\n\n Stopwatch.compose ()\n\nCreate child widgets of a stopwatch."
+  },
+  {
+    "objectID": "stopwatch3.html#create-the-app",
+    "href": "stopwatch3.html#create-the-app",
+    "title": "Stopwatch Iteration 3",
+    "section": "Create the App",
+    "text": "Create the App\n\nsource\n\nStopwatchApp\n\n StopwatchApp (driver_class:Type[Driver]|None=None,\n               css_path:CSSPathType=None, watch_css:bool=False)\n\nA Textual app to manage stopwatches.\nA CSS_PATH has now been added.\n\nsource\n\n\nStopwatchApp.compose\n\n StopwatchApp.compose ()\n\nCreate child widgets for the app.\n\nsource\n\n\nStopwatchApp.action_toggle_dark\n\n StopwatchApp.action_toggle_dark ()\n\nAn action to toggle dark mode."
+  }
+]
